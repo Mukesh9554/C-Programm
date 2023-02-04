@@ -1,18 +1,18 @@
-#include<stdio.h>
-int main()
-{
- int j,i,d,a=1;
-
- for(i=1;i<=10;i++)
- {d=a+47; 
-for(j=1;j<=i;j++)
-{ char ch =(char)d;
-
-printf(" %c",ch);
-d++;		
-}
- printf("\n");
+#include <stdio.h>
+ int main()
+ {
+ 	int bill,received,returned;
+ 	printf("Enter the bill amount : ");
+ 	scanf("%d",&bill);
+ 	printf("Enter the received amount : ");
+ 	scanf("%d",received);
+ 	returned=received-bill;
+  int array[10]={2000,500,200,100,50,20,10,5,2,1};
+  for(int i=0;i<10;i++)
+  { 
+   int temp=returned;
+   printf("%d",temp);
+   returned=returned%array[i];
+  }
+  return 0;
  }
-  
-}
-
